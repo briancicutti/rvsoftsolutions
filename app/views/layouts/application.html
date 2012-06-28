@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"><html>
+<head>
+  <title>Rvsoftsolutions</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="description" content="" />
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<div id="header">
+	<div class="page">
+		<%= link_to "RVSoft Solutions", root_url, class: "logo" %>
+		<ul>
+			<li class="<%= is_active?("index") %>"><%= link_to "Home", root_url %></li>
+			<li class="<%= is_active?("about") %>"><%= link_to "About", about_url %></li>
+			<li class="<%= is_active?("tour") %>"><a href="tour.html">Tour</a></li>
+			<li class="<%= is_active?("pricing") %>"><a href="pricing.html">Pricing</a></li>
+			<li class="<%= is_active?("blog") %>"><a href="blog.html">Blog</a></li>
+			<li class="<%= is_active?("contact") %>"><a href="contact.html">Contact</a></li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+	</div>
+	
+	<%= yield %>
+
+	<div id="footer" class="page">
+		<p>Copyright 2012 RVSoftSolutions.com.</p>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="tour.html">Tour</a></li>
+			<li><a href="pricing.html">Pricing</a></li>
+			<li><a href="blog.html">Blog</a></li>
+			<li><a href="contact.html">Contact</a></li>
+		</ul>
+		<div class="clear"></div>
+	</div>
+</body>
+</html>

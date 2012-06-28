@@ -1,0 +1,53 @@
+
+	
+	<div id="page">
+				
+		<div class="top"></div>
+		<div class="content">
+			
+			<div class="header page">
+				<h1>Your Big IDEA!</h1>
+			</div>
+			
+			<div id="contact" class="padding">
+				
+				<p>Whether an enterprise application or a great startup idea; we love to hear great minds share great ideas with us. Use the form below and let us know more about what your needs are and we'll be excited to set up a time to see how we can help. </p>
+				
+				<div class="section_title">
+					<h3>Send Us An Email</h3>
+				</div>
+				
+				<p class="validation"></p>
+				
+				<form action="scripts/send_email.php" method="post" id="contact_form">
+					
+					<p><label>Your Name</label>
+					<input type="text" id="name" name="name" class="text_field" /></p>
+					
+					<p><label>Your Email</label>
+					<input type="text" id="email" name="email" class="text_field" /></p>
+					
+					<p class="last"><label>Subject</label>
+					<select name="subject" id="subject" class="text_field">
+						<option value="General Support">Enterprise Application Development</option>
+						<option value="General Support">Application Maintenance</option>
+						<option value="General Support">Startup Idea</option>
+					</select></p>
+					<div class="clear"></div>
+					
+					<p class="message"><label>Message</label>
+					<textarea name="message" id="message" class="text_field" rows="" cols=""></textarea></p>
+					
+					<div class="send_form">
+						<a href="javascript:;" class="button" id="send"><span>Send Email</span></a>
+					</div>
+					<div class="clear"></div>
+					
+				</form>
+				
+			</div>
+			
+		</div>
+		<div class="bottom"></div>
+	</div>
+	
