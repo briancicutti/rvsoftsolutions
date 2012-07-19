@@ -24,4 +24,8 @@ class SiteController < ApplicationController
     
   end
   
+  def mail
+    Mailer.admin_mail(params)
+    redirect_to :back, notice: "Thanks for submitting a form"
+  end
 end
