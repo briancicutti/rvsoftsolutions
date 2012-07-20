@@ -15,7 +15,7 @@
 		<ul>
 			<li class="<%= is_active?("index") %>"><%= link_to "Home", root_url %></li>
 			<li class="<%= is_active?("about") %>"><%= link_to "About", about_url %></li>
-			<li class="<%= is_active?("tour") %>"><a href="tour.html">Tour</a></li>
+			<li class="<%= is_active?("tour") %>"><%= link_to "Mobile", mobile_url %></li>
 			<li class="<%= is_active?("pricing") %>"><a href="pricing.html">Pricing</a></li>
 			<li class="<%= is_active?("blog") %>"><a href="blog.html">Blog</a></li>
 			<li class="<%= is_active?("contact") %>"><a href="contact.html">Contact</a></li>

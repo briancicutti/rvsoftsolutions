@@ -8,7 +8,7 @@ class SiteController < ApplicationController
     
   end
   
-  def tour
+  def mobile
     
   end
   
