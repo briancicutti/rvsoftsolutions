@@ -55,5 +55,17 @@ module Rvsoftsolutions
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    config.action_mailer.raise_delivery_errors = true
+    
+    config.action_mailer.smtp_settings = {
+      :address => "smtp.gmail.com",  
+      :port => 587,  
+      :domain => "cicutti.com",  
+      :user_name => "rvsoft@cicutti.com",  
+      :password => "rvsoft2012",  
+      :authentication =>  :plain,
+      :enable_starttls_auto => true
+    }
   end
 end

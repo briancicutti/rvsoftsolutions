@@ -51,5 +51,5 @@ production:
   encoding: unicode
   database: rvsoftsolutions_production
   pool: 5
-  username: ******
-  password: ******
+  username: ENV['DATABASE_USERNAME']
+  password: ENV['DATABASE_PASSWORD']
